@@ -21,38 +21,39 @@
       <node id="609513034250975269" at="41,175,42,136" concept="0" />
       <node id="609513034251008175" at="42,136,43,53" concept="3" />
       <node id="609513034250967034" at="43,53,44,148" concept="0" />
-      <node id="428126000008920676" at="44,148,45,123" concept="0" />
-      <node id="428126000008920686" at="45,123,46,94" concept="0" />
-      <node id="609513034250966843" at="46,94,47,15" concept="2" />
-      <node id="428126000008896396" at="49,86,50,132" concept="0" />
-      <node id="428126000008898642" at="50,132,51,149" concept="0" />
+      <node id="2439911793503988231" at="44,148,45,85" concept="1" />
+      <node id="2439911793503993922" at="45,85,46,106" concept="0" />
+      <node id="428126000008920686" at="46,106,47,94" concept="0" />
+      <node id="2439911793503997881" at="47,94,48,61" concept="0" />
+      <node id="609513034250966843" at="48,61,49,15" concept="2" />
       <node id="609513034250965722" at="80,3,81,53" concept="0" />
       <node id="609513034250965722" at="97,15,98,59" concept="2" />
       <node id="428126000008896012" at="105,3,106,53" concept="0" />
       <node id="428126000008896012" at="121,15,122,53" concept="0" />
       <node id="428126000008896012" at="122,53,123,17" concept="2" />
-      <node id="428126000008896012" at="49,0,53,0" concept="4" trace="mapSrcMacro_post_1_0#(Ljetbrains/mps/generator/template/MapSrcMacroPostProcContext;)V" />
-      <node id="609513034250965722" at="40,0,49,0" concept="4" trace="mapSrcMacro_map_1_0#(Ljetbrains/mps/generator/template/MapSrcMacroContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="428126000008896012" at="51,0,53,0" concept="4" trace="mapSrcMacro_post_1_0#(Ljetbrains/mps/generator/template/MapSrcMacroPostProcContext;)V" />
+      <node id="609513034250965722" at="40,0,51,0" concept="4" trace="mapSrcMacro_map_1_0#(Ljetbrains/mps/generator/template/MapSrcMacroContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="428126000008896013" at="51,86,51,86" />
       <scope id="609513034250965722" at="97,15,98,59" />
-      <scope id="428126000008896013" at="49,86,51,149" />
-      <scope id="428126000008896012" at="121,15,123,17" />
-      <scope id="428126000008896012" at="49,0,53,0">
+      <scope id="428126000008896012" at="51,0,53,0">
         <var name="_context" id="428126000008896012" />
       </scope>
-      <scope id="609513034250965723" at="40,78,47,15">
+      <scope id="428126000008896012" at="121,15,123,17" />
+      <scope id="609513034250965723" at="40,78,49,15">
         <var name="ewd" id="609513034250965987" />
+        <var name="original" id="2439911793503988234" />
       </scope>
-      <scope id="609513034250965722" at="40,0,49,0">
+      <scope id="609513034250965722" at="40,0,51,0">
         <var name="_context" id="609513034250965722" />
       </scope>
     </file>
   </root>
   <root nodeRef="r:9e8bd7af-c2f6-4964-bc8a-3b6ed43b26b8(mwe.generator.templates@generator)/609513034251009521">
     <file name="QueriesGenerated.java">
-      <node id="609513034251033830" at="33,105,34,149" concept="1" />
-      <node id="609513034251034648" at="34,149,35,120" concept="0" />
-      <node id="609513034251057964" at="35,120,36,195" concept="0" />
-      <node id="609513034251036753" at="36,195,37,101" concept="0" />
+      <node id="2439911793503957614" at="33,105,34,132" concept="1" />
+      <node id="609513034251033830" at="34,132,35,92" concept="1" />
+      <node id="2439911793503971897" at="35,92,36,103" concept="0" />
+      <node id="609513034251036753" at="36,103,37,101" concept="0" />
       <node id="609513034250997533" at="37,101,38,20" concept="2" />
       <node id="609513034250997409" at="54,3,55,59" concept="0" />
       <node id="609513034250997409" at="72,15,73,82" concept="2" />
@@ -60,6 +61,7 @@
       <scope id="609513034250997409" at="72,15,73,82" />
       <scope id="609513034250997411" at="33,105,38,20">
         <var name="node_out" id="609513034251033831" />
+        <var name="original" id="2439911793503957615" />
       </scope>
       <scope id="609513034250997410" at="33,0,40,0">
         <var name="_context" id="609513034250997410" />

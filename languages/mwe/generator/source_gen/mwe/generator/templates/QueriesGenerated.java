@@ -31,9 +31,9 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static Object referenceReduction_GetReferent_2_ewapjk_a0(final ReferenceMacroContext _context) {
-    SNode node_out = _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.element$G6$O), "withdata");
-    _context.showWarningMessage(_context.getNode(), "reducref input " + SNodeOperations.getPointer(_context.getNode()));
-    _context.showWarningMessage(SLinkOperations.getTarget(_context.getNode(), LINKS.element$G6$O), "reducref input.element " + SLinkOperations.getPointer(_context.getNode(), LINKS.element$G6$O));
+    SNode original = (SNode) _context.getOriginalCopiedInputNode(SLinkOperations.getTarget(_context.getNode(), LINKS.element$G6$O));
+    SNode node_out = _context.getOutputNodeByInputNodeAndMappingLabel(original, "withdata");
+    _context.showWarningMessage(original, "reducref original " + SNodeOperations.getPointer(original));
     _context.showWarningMessage(node_out, "reducref output " + SNodeOperations.getPointer(node_out));
     return node_out;
   }
@@ -42,13 +42,13 @@ public class QueriesGenerated extends QueryProviderBase {
     SPropertyOperations.assign(ewd, PROPS.name$MnvL, SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + " with data");
     // Some more involved Java code would happen here
     SPropertyOperations.assign(ewd, PROPS.data$dpus, "Some data for element " + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
-    _context.showWarningMessage(_context.getNode(), "map_Element input " + SNodeOperations.getPointer(_context.getNode()));
+    SNode original = (SNode) _context.getOriginalCopiedInputNode(_context.getNode());
+    _context.showWarningMessage(original, "map_Element original " + SNodeOperations.getPointer(original));
     _context.showWarningMessage(ewd, "map_Element output " + SNodeOperations.getPointer(ewd));
+    _context.registerMappingLabel(original, "withdata", ewd);
     return ewd;
   }
   public static void mapSrcMacro_post_1_0(final MapSrcMacroPostProcContext _context) {
-    _context.showWarningMessage(_context.getNode(), "map_Element postproc input " + SNodeOperations.getPointer(_context.getNode()));
-    _context.showWarningMessage(_context.getOutputNode(), "map_Element postproc outputNode " + SNodeOperations.getPointer(_context.getOutputNode()));
   }
   private final Map<String, ReferenceTargetQuery> rtqMethods = new HashMap<String, ReferenceTargetQuery>();
   {
